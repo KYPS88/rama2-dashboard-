@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-05-20T17:30:31+07:00",
+  "as_of": "2026-05-20T18:00:30+07:00",
   "by_employee": {
     "วุฒิ": {
       "sales_today": 0.0,
@@ -34,19 +34,19 @@
       "month_target": 107000.0
     },
     "หน่อง": {
-      "sales_today": 0.0,
-      "orders_today": 0,
-      "avg_basket_today": 0.0,
+      "sales_today": 2490.0,
+      "orders_today": 1,
+      "avg_basket_today": 2490.0,
       "target_daily": 5220.0,
-      "month_sales": 45100.0,
+      "month_sales": 47590.0,
       "month_target": 107000.0
     },
     "กัน": {
-      "sales_today": 5060.0,
-      "orders_today": 2,
-      "avg_basket_today": 2530.0,
+      "sales_today": 5750.0,
+      "orders_today": 3,
+      "avg_basket_today": 1917.0,
       "target_daily": 7077.0,
-      "month_sales": 66870.0,
+      "month_sales": 67560.0,
       "month_target": 107000.0
     },
     "อุ๋ย": {
