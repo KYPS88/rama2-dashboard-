@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-30T10:00:25",
-  "updated_label": "30/05/2026 10:00",
+  "updated_at": "2026-05-30T10:02:44",
+  "updated_label": "30/05/2026 10:02",
   "source": "https://client.yalecom.co.th/custom_menu/extension_summary_outbound",
   "row_count": 5,
   "rows": [
@@ -151,19 +151,19 @@
     {
       "extension": "305",
       "name": "เจ",
-      "total_calls": 147,
+      "total_calls": 148,
       "answered": 79,
-      "missed": 68,
+      "missed": 69,
       "talktime": 4647,
       "avg": 58,
       "_raw": [
         "305",
         "เจ",
-        "147",
+        "148",
         "79",
-        "68",
+        "69",
         "0",
-        "1:35:08",
+        "1:36:11",
         "1:17:27",
         "36",
         "17",
