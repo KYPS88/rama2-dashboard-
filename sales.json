@@ -1,36 +1,36 @@
 {
-  "as_of": "2026-05-30T21:42:02+07:00",
+  "as_of": "2026-06-02T09:00:34+07:00",
   "by_employee": {
     "วุฒิ": {
       "sales_today": 0.0,
       "orders_today": 0,
       "avg_basket_today": 0.0,
       "target_daily": 6052.0,
-      "month_sales": 43650.0,
+      "month_sales": 0.0,
       "month_target": 139100.0
     },
     "เตย": {
-      "sales_today": 5860.0,
-      "orders_today": 3,
-      "avg_basket_today": 1953.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
       "target_daily": 22260.0,
-      "month_sales": 93320.0,
+      "month_sales": 0.0,
       "month_target": 128400.0
     },
     "นุช": {
-      "sales_today": 5270.0,
-      "orders_today": 2,
-      "avg_basket_today": 2635.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
       "target_daily": 26460.0,
-      "month_sales": 89090.0,
+      "month_sales": 0.0,
       "month_target": 128400.0
     },
     "เจ": {
-      "sales_today": 9640.0,
-      "orders_today": 5,
-      "avg_basket_today": 1928.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
       "target_daily": 13705.0,
-      "month_sales": 92810.0,
+      "month_sales": 0.0,
       "month_target": 107000.0
     },
     "หน่อง": {
@@ -38,7 +38,7 @@
       "orders_today": 0,
       "avg_basket_today": 0.0,
       "target_daily": 6615.0,
-      "month_sales": 61500.0,
+      "month_sales": 0.0,
       "month_target": 107000.0
     },
     "กัน": {
@@ -46,23 +46,23 @@
       "orders_today": 0,
       "avg_basket_today": 0.0,
       "target_daily": 24890.0,
-      "month_sales": 111260.0,
+      "month_sales": 0.0,
       "month_target": 107000.0
     },
     "อุ๋ย": {
-      "sales_today": 6250.0,
-      "orders_today": 4,
-      "avg_basket_today": 1563.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
       "target_daily": 13750.0,
-      "month_sales": 92600.0,
+      "month_sales": 0.0,
       "month_target": 107000.0
     },
     "ซิน": {
-      "sales_today": 5080.0,
-      "orders_today": 2,
-      "avg_basket_today": 2540.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
       "target_daily": 4300.0,
-      "month_sales": 74130.0,
+      "month_sales": 0.0,
       "month_target": 85600.0
     }
   }
