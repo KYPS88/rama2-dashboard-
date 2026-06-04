@@ -326,6 +326,38 @@
     padding: 10px 16px; margin-bottom: 16px; font-size: 14px; font-weight: 600;
   }
 
+  /* HEATMAP */
+  .heatmap-wrap { overflow-x: auto; }
+  table.heatmap {
+    border-collapse: separate; border-spacing: 2px;
+    font-size: 12px; min-width: 100%;
+  }
+  table.heatmap th, table.heatmap td {
+    padding: 6px 8px; text-align: center; min-width: 78px;
+    font-variant-numeric: tabular-nums;
+  }
+  table.heatmap th {
+    background: var(--bg-card2); color: var(--text-dim);
+    font-weight: 600; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .5px;
+  }
+  table.heatmap th.name-col, table.heatmap td.name-col {
+    text-align: left; min-width: 160px; padding-left: 12px;
+    background: var(--bg-card2);
+  }
+  table.heatmap td.name-col { color: var(--text); font-weight: 600; }
+  table.heatmap td.name-col .ext-tag { color: var(--text-dim); font-size: 11px; margin-left: 8px; }
+  table.heatmap td.heat-cell { color: #0a1628; font-weight: 700; border-radius: 4px; }
+  table.heatmap td.lunch {
+    background: rgba(255,255,255,.06) !important;
+    color: var(--text-dim); font-style: italic; font-weight: 500;
+  }
+  table.heatmap td.total {
+    background: rgba(74,144,255,.18); color: var(--accent);
+    font-weight: 800; font-size: 13px; border-radius: 4px;
+  }
+  table.heatmap .heat-empty { color: var(--text-dim); text-align: center; padding: 20px; }
+
   @media (max-width: 980px) {
     .kpi-grid, .kpi-grid.kpi-grid-4 { grid-template-columns: repeat(2, 1fr); }
     .header .meta { position: static; transform: none; margin-top: 12px; text-align: left; }
@@ -414,9 +446,17 @@
     </div>
   </div>
 
+  <!-- HEATMAP รายชั่วโมง -->
+  <div class="section">
+    <h2 class="section-title">🔥 Heatmap ทอล์กไทม์รายชั่วโมง (นาที)</h2>
+    <div class="heatmap-wrap">
+      <table class="heatmap" id="heatmapTable"></table>
+    </div>
+  </div>
+
 </div>
 
-<script id="payload" type="application/json">{"rows": [{"ext": "302", "name": "เตย", "color": "#EC4899", "initial": "เ", "photo": "photos/302.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 149, "answered": 84, "over30": 47, "talk_total_sec": 8565, "talk_out_sec": 8565, "delta_talk_sec": 2393, "delta_calls": 11, "has_prev": true, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 6219.0, "month_sales": 2280.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0}, {"ext": "304", "name": "นุช", "color": "#A855F7", "initial": "น", "photo": "photos/304.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 102, "answered": 63, "over30": 44, "talk_total_sec": 8059, "talk_out_sec": 8059, "delta_talk_sec": 1099, "delta_calls": 15, "has_prev": true, "sales_today": 8030.0, "orders_today": 4, "avg_basket": 2008.0, "target_daily": 5733.0, "month_sales": 10310.0, "month_target": 128400.0, "conversion": 6.349206349206349, "conv_sales": 3.9215686274509802, "achieved_pct": 140.06628292342577}, {"ext": "305", "name": "เจ", "color": "#14B8A6", "initial": "เ", "photo": "photos/305.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 182, "answered": 106, "over30": 61, "talk_total_sec": 8075, "talk_out_sec": 8075, "delta_talk_sec": 1378, "delta_calls": 25, "has_prev": true, "sales_today": 1790.0, "orders_today": 1, "avg_basket": 1790.0, "target_daily": 6323.0, "month_sales": 1790.0, "month_target": 139100.0, "conversion": 0.9433962264150944, "conv_sales": 0.5494505494505495, "achieved_pct": 28.30934682903685}, {"ext": "307", "name": "กัน", "color": "#10B981", "initial": "ก", "photo": "photos/307.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 179, "answered": 101, "over30": 44, "talk_total_sec": 7422, "talk_out_sec": 7422, "delta_talk_sec": 274, "delta_calls": 17, "has_prev": true, "sales_today": 6070.0, "orders_today": 2, "avg_basket": 3035.0, "target_daily": 6845.0, "month_sales": 10640.0, "month_target": 155150.0, "conversion": 1.9801980198019802, "conv_sales": 1.1173184357541899, "achieved_pct": 88.67786705624543}, {"ext": "308", "name": "อุ๋ย", "color": "#EF4444", "initial": "อ", "photo": "photos/308.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 153, "answered": 104, "over30": 62, "talk_total_sec": 7277, "talk_out_sec": 7277, "delta_talk_sec": 720, "delta_calls": 22, "has_prev": true, "sales_today": 5650.0, "orders_today": 2, "avg_basket": 2825.0, "target_daily": 5989.0, "month_sales": 13000.0, "month_target": 139100.0, "conversion": 1.9230769230769231, "conv_sales": 1.3071895424836601, "achieved_pct": 94.33962264150944}, {"ext": "309", "name": "ซิน", "color": "#6366F1", "initial": "ซ", "photo": "photos/309.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 147, "answered": 74, "over30": 45, "talk_total_sec": 10107, "talk_out_sec": 10107, "delta_talk_sec": 1780, "delta_calls": 9, "has_prev": true, "sales_today": 4760.0, "orders_today": 3, "avg_basket": 1587.0, "target_daily": 5134.0, "month_sales": 9520.0, "month_target": 117700.0, "conversion": 4.054054054054054, "conv_sales": 2.0408163265306123, "achieved_pct": 92.71523178807946}], "kpis": {"total_calls": 912, "total_over15": 303, "talk_total_sec": 49505, "talk_out_sec": 49505, "total_sales": 26300.0, "total_orders": 12, "avg_basket_all": 2191.6666666666665, "conv_all": 58.333333333333336, "target_daily_all": 36243.0, "month_sales_all": 47540.0, "month_target_all": 818550.0, "achieved_all": 72.56573683193996, "month_pct": 5.807830920530206}, "as_of": "04/06/2026 17:30 น."}</script>
+<script id="payload" type="application/json">{"rows": [{"ext": "302", "name": "เตย", "color": "#EC4899", "initial": "เ", "photo": "photos/302.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 151, "answered": 86, "over30": 48, "talk_total_sec": 8682, "talk_out_sec": 8682, "delta_talk_sec": 2510, "delta_calls": 13, "has_prev": true, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 6219.0, "month_sales": 2280.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0}, {"ext": "304", "name": "นุช", "color": "#A855F7", "initial": "น", "photo": "photos/304.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 104, "answered": 64, "over30": 44, "talk_total_sec": 8059, "talk_out_sec": 8059, "delta_talk_sec": 1099, "delta_calls": 17, "has_prev": true, "sales_today": 8030.0, "orders_today": 4, "avg_basket": 2008.0, "target_daily": 5733.0, "month_sales": 10310.0, "month_target": 128400.0, "conversion": 6.25, "conv_sales": 3.8461538461538463, "achieved_pct": 140.06628292342577}, {"ext": "305", "name": "เจ", "color": "#14B8A6", "initial": "เ", "photo": "photos/305.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 184, "answered": 107, "over30": 62, "talk_total_sec": 8138, "talk_out_sec": 8138, "delta_talk_sec": 1441, "delta_calls": 27, "has_prev": true, "sales_today": 1790.0, "orders_today": 1, "avg_basket": 1790.0, "target_daily": 6323.0, "month_sales": 1790.0, "month_target": 139100.0, "conversion": 0.9345794392523363, "conv_sales": 0.5434782608695652, "achieved_pct": 28.30934682903685}, {"ext": "307", "name": "กัน", "color": "#10B981", "initial": "ก", "photo": "photos/307.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 181, "answered": 101, "over30": 44, "talk_total_sec": 7422, "talk_out_sec": 7422, "delta_talk_sec": 274, "delta_calls": 19, "has_prev": true, "sales_today": 6070.0, "orders_today": 2, "avg_basket": 3035.0, "target_daily": 6845.0, "month_sales": 10640.0, "month_target": 155150.0, "conversion": 1.9801980198019802, "conv_sales": 1.1049723756906076, "achieved_pct": 88.67786705624543}, {"ext": "308", "name": "อุ๋ย", "color": "#EF4444", "initial": "อ", "photo": "photos/308.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 154, "answered": 105, "over30": 63, "talk_total_sec": 7416, "talk_out_sec": 7416, "delta_talk_sec": 859, "delta_calls": 23, "has_prev": true, "sales_today": 5650.0, "orders_today": 2, "avg_basket": 2825.0, "target_daily": 5989.0, "month_sales": 13000.0, "month_target": 139100.0, "conversion": 1.9047619047619049, "conv_sales": 1.2987012987012987, "achieved_pct": 94.33962264150944}, {"ext": "309", "name": "ซิน", "color": "#6366F1", "initial": "ซ", "photo": "photos/309.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 148, "answered": 75, "over30": 46, "talk_total_sec": 10290, "talk_out_sec": 10290, "delta_talk_sec": 1963, "delta_calls": 10, "has_prev": true, "sales_today": 4760.0, "orders_today": 3, "avg_basket": 1587.0, "target_daily": 5134.0, "month_sales": 9520.0, "month_target": 117700.0, "conversion": 4.0, "conv_sales": 2.027027027027027, "achieved_pct": 92.71523178807946}], "kpis": {"total_calls": 922, "total_over15": 307, "talk_total_sec": 50007, "talk_out_sec": 50007, "total_sales": 26300.0, "total_orders": 12, "avg_basket_all": 2191.6666666666665, "conv_all": 58.35140997830802, "target_daily_all": 36243.0, "month_sales_all": 47540.0, "month_target_all": 818550.0, "achieved_all": 72.56573683193996, "month_pct": 5.807830920530206, "today_date": "2026-06-04"}, "as_of": "04/06/2026 17:33 น."}</script>
 <script>
 let D = JSON.parse(document.getElementById('payload').textContent);
 const LIVE = D;
@@ -513,7 +553,95 @@ function renderDashboard(data) {
   `).join('');
 
   bindAllAvatars();
+  renderHeatmap();
 }
+
+// ===== HEATMAP รายชั่วโมง (อ่านจาก history snapshots ของวันนี้) =====
+async function renderHeatmap() {
+  const dateStr = (D && D.kpis && D.kpis.today_date) ? D.kpis.today_date : null;
+  const tbl = document.getElementById('heatmapTable');
+  if (!tbl || !dateStr) return;
+  let day;
+  try {
+    const res = await fetch(`history/${dateStr}.json?_=` + Date.now());
+    if (!res.ok) throw 0;
+    day = await res.json();
+  } catch(e) {
+    tbl.innerHTML = '<tbody><tr><td class="heat-empty">ยังไม่มีข้อมูลรายชั่วโมงสำหรับวันนี้ (รอ history สะสมก่อน)</td></tr></tbody>';
+    return;
+  }
+  const snaps = (day.snapshots || []).slice().sort((a,b) => (a.ts||'').localeCompare(b.ts||''));
+  if (!snaps.length) {
+    tbl.innerHTML = '<tbody><tr><td class="heat-empty">ยังไม่มีข้อมูลรายชั่วโมงสำหรับวันนี้</td></tr></tbody>';
+    return;
+  }
+  function parseHHMM(ts) {
+    const m = (ts || '').match(/T(\d{2}):(\d{2})/);
+    if (!m) return null;
+    return parseInt(m[1])*60 + parseInt(m[2]);
+  }
+  const byExt = {};
+  for (const s of snaps) {
+    const t = parseHHMM(s.ts);
+    if (t === null) continue;
+    const pl = s.payload || {};
+    for (const r of (pl.rows || [])) {
+      if (!r.ext) continue;
+      if (!byExt[r.ext]) byExt[r.ext] = { name: r.name, points: [] };
+      byExt[r.ext].points.push({ t, talk: r.talk_total_sec || 0 });
+    }
+  }
+  function talkAt(ext, targetT) {
+    const pts = (byExt[ext] && byExt[ext].points) || [];
+    let last = 0;
+    for (const p of pts) { if (p.t <= targetT) last = p.talk; else break; }
+    return last;
+  }
+  function heatColor(mins) {
+    const ratio = Math.max(0, Math.min(1, mins / 20));
+    const hue = ratio * 120;
+    return `hsl(${hue}, 70%, 55%)`;
+  }
+  const hours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+  const LUNCH = 13;
+  const empRows = [];
+  for (const r of D.rows) {
+    const cells = [];
+    let total = 0;
+    for (const h of hours) {
+      const startTalk = talkAt(r.ext, h*60);
+      const endTalk = talkAt(r.ext, (h+1)*60);
+      const mins = Math.max(0, (endTalk - startTalk) / 60);
+      const isLunch = (h === LUNCH);
+      if (!isLunch) total += mins;
+      cells.push({ mins, isLunch });
+    }
+    empRows.push({ ext: r.ext, name: r.name, total, cells });
+  }
+  empRows.sort((a,b) => b.total - a.total);
+  const headHTML = ['<thead><tr><th class="name-col">พนักงาน</th>'];
+  for (const h of hours) {
+    const hh = String(h).padStart(2,'0');
+    headHTML.push(`<th>${hh}.00-${h}.59</th>`);
+  }
+  headHTML.push('<th>รวม 8 ชม.</th></tr></thead>');
+  const bodyHTML = ['<tbody>'];
+  for (const er of empRows) {
+    const row = [`<td class="name-col">${er.name}<span class="ext-tag">ext ${er.ext}</span></td>`];
+    for (const c of er.cells) {
+      if (c.isLunch) {
+        row.push(`<td class="heat-cell lunch">${c.mins.toFixed(2)}</td>`);
+      } else {
+        row.push(`<td class="heat-cell" style="background:${heatColor(c.mins)}">${c.mins.toFixed(2)}</td>`);
+      }
+    }
+    row.push(`<td class="total">${er.total.toFixed(2)}</td>`);
+    bodyHTML.push('<tr>' + row.join('') + '</tr>');
+  }
+  bodyHTML.push('</tbody>');
+  tbl.innerHTML = headHTML.join('') + bodyHTML.join('');
+}
+
 
 // localStorage override — ใช้ key คนละตัวจาก HQ
 const PHOTO_KEY = 'rama2-photo-settings';
