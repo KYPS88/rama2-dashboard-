@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-08T10:00:31+07:00",
+  "as_of": "2026-06-08T10:30:35+07:00",
   "by_employee": {
     "วุฒิ": {
       "sales_today": 0.0,
@@ -13,7 +13,7 @@
       "sales_today": 0.0,
       "orders_today": 0,
       "avg_basket_today": 0.0,
-      "target_daily": 6524.0,
+      "target_daily": 6867.0,
       "month_sales": 8630.0,
       "month_target": 139100.0
     },
@@ -21,7 +21,7 @@
       "sales_today": 0.0,
       "orders_today": 0,
       "avg_basket_today": 0.0,
-      "target_daily": 5587.0,
+      "target_daily": 5786.0,
       "month_sales": 18460.0,
       "month_target": 128400.0
     },
@@ -29,7 +29,7 @@
       "sales_today": 0.0,
       "orders_today": 0,
       "avg_basket_today": 0.0,
-      "target_daily": 6866.0,
+      "target_daily": 7154.0,
       "month_sales": 3170.0,
       "month_target": 139100.0
     },
@@ -42,18 +42,18 @@
       "month_target": 107000.0
     },
     "กัน": {
-      "sales_today": 5180.0,
-      "orders_today": 2,
-      "avg_basket_today": 2590.0,
-      "target_daily": 7112.0,
-      "month_sales": 18100.0,
+      "sales_today": 6970.0,
+      "orders_today": 3,
+      "avg_basket_today": 2323.0,
+      "target_daily": 7213.0,
+      "month_sales": 19890.0,
       "month_target": 155150.0
     },
     "อุ๋ย": {
       "sales_today": 0.0,
       "orders_today": 0,
       "avg_basket_today": 0.0,
-      "target_daily": 6305.0,
+      "target_daily": 6579.0,
       "month_sales": 14090.0,
       "month_target": 139100.0
     },
@@ -61,7 +61,7 @@
       "sales_today": 0.0,
       "orders_today": 0,
       "avg_basket_today": 0.0,
-      "target_daily": 4992.0,
+      "target_daily": 4818.0,
       "month_sales": 26150.0,
       "month_target": 117700.0
     }
