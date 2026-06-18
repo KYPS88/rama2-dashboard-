@@ -156,36 +156,47 @@
   .leader-card.top1 {
     grid-column: 1 / -1;
     border-color: var(--gold);
-    box-shadow: 0 0 24px rgba(252,211,77,0.15);
-    padding: 22px 26px;
+    box-shadow: 0 0 30px rgba(252,211,77,0.18);
+    padding: 32px 36px;
+    gap: 26px;
   }
-  .leader-card.top1 .rank { color: var(--gold); font-size: 16px; font-weight: 800; }
-  .leader-card.top1 .avatar { width: 100px; height: 100px; font-size: 36px; }
-  .leader-card.top1 .leader-info .name { font-size: 24px; }
-  .leader-card.top1 .leader-info .ext { font-size: 14px; }
-  .leader-card.top1 .leader-info .stats { font-size: 15px; }
+  .leader-card.top1 .rank { color: var(--gold); font-size: 20px; font-weight: 800; top: 14px; right: 18px; }
+  .leader-card.top1 .avatar { width: 150px; height: 150px; font-size: 50px; }
+  .leader-card.top1 .leader-info .name { font-size: 38px; line-height: 1.1; }
+  .leader-card.top1 .leader-info .ext { font-size: 18px; margin-top: 6px; }
+  .leader-card.top1 .leader-info .stats { font-size: 20px; gap: 18px; margin-top: 12px; }
+  .leader-card.top1 .leader-info .stats b { font-size: 26px; }
+  .leader-card.top1 .leader-info .delta { font-size: 15px; margin-top: 10px; }
 
   .leader-card.top2 {
     grid-column: span 2;
     border-color: #C0C0C0;
-    box-shadow: 0 0 16px rgba(192,192,192,0.12);
-    padding: 18px 22px;
+    box-shadow: 0 0 20px rgba(192,192,192,0.14);
+    padding: 24px 26px;
+    gap: 20px;
   }
-  .leader-card.top2 .rank { color: #C0C0C0; font-size: 14px; font-weight: 800; }
-  .leader-card.top2 .avatar { width: 78px; height: 78px; font-size: 28px; }
-  .leader-card.top2 .leader-info .name { font-size: 20px; }
-  .leader-card.top2 .leader-info .stats { font-size: 14px; }
+  .leader-card.top2 .rank { color: #C0C0C0; font-size: 16px; font-weight: 800; top: 10px; right: 14px; }
+  .leader-card.top2 .avatar { width: 110px; height: 110px; font-size: 38px; }
+  .leader-card.top2 .leader-info .name { font-size: 28px; line-height: 1.1; }
+  .leader-card.top2 .leader-info .ext { font-size: 14px; margin-top: 4px; }
+  .leader-card.top2 .leader-info .stats { font-size: 16px; margin-top: 8px; }
+  .leader-card.top2 .leader-info .stats b { font-size: 20px; }
+  .leader-card.top2 .leader-info .delta { font-size: 13px; margin-top: 8px; }
 
   .leader-card.top3 {
     grid-column: span 2;
     border-color: #CD7F32;
-    box-shadow: 0 0 16px rgba(205,127,50,0.12);
-    padding: 18px 22px;
+    box-shadow: 0 0 20px rgba(205,127,50,0.14);
+    padding: 24px 26px;
+    gap: 20px;
   }
-  .leader-card.top3 .rank { color: #CD7F32; font-size: 14px; font-weight: 800; }
-  .leader-card.top3 .avatar { width: 78px; height: 78px; font-size: 28px; }
-  .leader-card.top3 .leader-info .name { font-size: 20px; }
-  .leader-card.top3 .leader-info .stats { font-size: 14px; }
+  .leader-card.top3 .rank { color: #CD7F32; font-size: 16px; font-weight: 800; top: 10px; right: 14px; }
+  .leader-card.top3 .avatar { width: 110px; height: 110px; font-size: 38px; }
+  .leader-card.top3 .leader-info .name { font-size: 28px; line-height: 1.1; }
+  .leader-card.top3 .leader-info .ext { font-size: 14px; margin-top: 4px; }
+  .leader-card.top3 .leader-info .stats { font-size: 16px; margin-top: 8px; }
+  .leader-card.top3 .leader-info .stats b { font-size: 20px; }
+  .leader-card.top3 .leader-info .delta { font-size: 13px; margin-top: 8px; }
 
   /* QUOTE BAR */
   .quote-bar {
@@ -523,7 +534,7 @@
 
 </div>
 
-<script id="payload" type="application/json">{"rows": [{"ext": "302", "name": "เตย", "color": "#EC4899", "initial": "เ", "photo": "photos/302.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 138, "answered": 76, "over30": 45, "talk_total_sec": 8341, "talk_out_sec": 8341, "delta_talk_sec": 299, "delta_calls": 14, "has_prev": true, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 9302.0, "month_sales": 36780.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0, "deadair_sec": 14554, "longest_sec": 966, "avg_per_call_sec": 114}, {"ext": "304", "name": "นุช", "color": "#A855F7", "initial": "น", "photo": "photos/304.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 124, "answered": 70, "over30": 45, "talk_total_sec": 7545, "talk_out_sec": 7545, "delta_talk_sec": 690, "delta_calls": 15, "has_prev": true, "sales_today": 7150.0, "orders_today": 3, "avg_basket": 2383.0, "target_daily": 7418.0, "month_sales": 53950.0, "month_target": 128400.0, "conversion": 4.285714285714286, "conv_sales": 2.4193548387096775, "achieved_pct": 96.38716635211647, "deadair_sec": 15775, "longest_sec": 825, "avg_per_call_sec": 110}, {"ext": "305", "name": "เจ", "color": "#14B8A6", "initial": "เ", "photo": "photos/305.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 185, "answered": 136, "over30": 59, "talk_total_sec": 7673, "talk_out_sec": 7673, "delta_talk_sec": 940, "delta_calls": 19, "has_prev": true, "sales_today": 690.0, "orders_today": 1, "avg_basket": 690.0, "target_daily": 9925.0, "month_sales": 30620.0, "month_target": 139100.0, "conversion": 0.7352941176470588, "conv_sales": 0.5405405405405406, "achieved_pct": 6.952141057934509, "deadair_sec": 16313, "longest_sec": 839, "avg_per_call_sec": 55}, {"ext": "307", "name": "กัน", "color": "#10B981", "initial": "ก", "photo": "photos/307.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 126, "answered": 71, "over30": 34, "talk_total_sec": 7251, "talk_out_sec": 7251, "delta_talk_sec": 35, "delta_calls": 17, "has_prev": true, "sales_today": 3290.0, "orders_today": 1, "avg_basket": 3290.0, "target_daily": 8707.0, "month_sales": 62660.0, "month_target": 155150.0, "conversion": 1.4084507042253522, "conv_sales": 0.7936507936507936, "achieved_pct": 37.78568967497416, "deadair_sec": 15371, "longest_sec": 1517, "avg_per_call_sec": 106}, {"ext": "308", "name": "อุ๋ย", "color": "#EF4444", "initial": "อ", "photo": "photos/308.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 128, "answered": 81, "over30": 41, "talk_total_sec": 8403, "talk_out_sec": 8403, "delta_talk_sec": 1548, "delta_calls": 10, "has_prev": true, "sales_today": 4560.0, "orders_today": 2, "avg_basket": 2280.0, "target_daily": 9857.0, "month_sales": 35230.0, "month_target": 139100.0, "conversion": 2.4691358024691357, "conv_sales": 1.5625, "achieved_pct": 46.26154002231917, "deadair_sec": 16056, "longest_sec": 1094, "avg_per_call_sec": 90}, {"ext": "309", "name": "ซิน", "color": "#6366F1", "initial": "ซ", "photo": "photos/309.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 108, "answered": 56, "over30": 37, "talk_total_sec": 10448, "talk_out_sec": 10448, "delta_talk_sec": 652, "delta_calls": 26, "has_prev": true, "sales_today": 3280.0, "orders_today": 2, "avg_basket": 1640.0, "target_daily": 4701.0, "month_sales": 69270.0, "month_target": 117700.0, "conversion": 3.571428571428571, "conv_sales": 1.8518518518518516, "achieved_pct": 69.77238885343544, "deadair_sec": 13175, "longest_sec": 2054, "avg_per_call_sec": 212}], "kpis": {"total_calls": 809, "total_over15": 261, "talk_total_sec": 49661, "talk_out_sec": 49661, "total_sales": 18970.0, "total_orders": 9, "avg_basket_all": 2107.777777777778, "conv_all": 60.568603213844256, "target_daily_all": 49910.0, "month_sales_all": 288510.0, "month_target_all": 818550.0, "achieved_all": 38.008415147265076, "month_pct": 35.246472420744, "today_date": "2026-06-18", "today_quote": "คุยกับลูกค้าเหมือนคุยกับคนสำคัญ — เพราะเขาสำคัญจริงๆ"}, "as_of": "18/06/2026 17:21 น."}</script>
+<script id="payload" type="application/json">{"rows": [{"ext": "302", "name": "เตย", "color": "#EC4899", "initial": "เ", "photo": "photos/302.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 140, "answered": 77, "over30": 46, "talk_total_sec": 8898, "talk_out_sec": 8898, "delta_talk_sec": 856, "delta_calls": 16, "has_prev": true, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 9302.0, "month_sales": 36780.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0, "deadair_sec": 14899, "longest_sec": 966, "avg_per_call_sec": 111}, {"ext": "304", "name": "นุช", "color": "#A855F7", "initial": "น", "photo": "photos/304.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 127, "answered": 72, "over30": 46, "talk_total_sec": 7628, "talk_out_sec": 7628, "delta_talk_sec": 773, "delta_calls": 18, "has_prev": true, "sales_today": 7150.0, "orders_today": 3, "avg_basket": 2383.0, "target_daily": 7418.0, "month_sales": 53950.0, "month_target": 128400.0, "conversion": 4.166666666666666, "conv_sales": 2.3622047244094486, "achieved_pct": 96.38716635211647, "deadair_sec": 16200, "longest_sec": 825, "avg_per_call_sec": 113}, {"ext": "305", "name": "เจ", "color": "#14B8A6", "initial": "เ", "photo": "photos/305.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 188, "answered": 137, "over30": 59, "talk_total_sec": 7702, "talk_out_sec": 7702, "delta_talk_sec": 969, "delta_calls": 22, "has_prev": true, "sales_today": 690.0, "orders_today": 1, "avg_basket": 690.0, "target_daily": 9925.0, "month_sales": 30620.0, "month_target": 139100.0, "conversion": 0.7299270072992701, "conv_sales": 0.5319148936170213, "achieved_pct": 6.952141057934509, "deadair_sec": 16706, "longest_sec": 839, "avg_per_call_sec": 56}, {"ext": "307", "name": "กัน", "color": "#10B981", "initial": "ก", "photo": "photos/307.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 128, "answered": 73, "over30": 34, "talk_total_sec": 7293, "talk_out_sec": 7293, "delta_talk_sec": 77, "delta_calls": 19, "has_prev": true, "sales_today": 3290.0, "orders_today": 1, "avg_basket": 3290.0, "target_daily": 8707.0, "month_sales": 62660.0, "month_target": 155150.0, "conversion": 1.36986301369863, "conv_sales": 0.78125, "achieved_pct": 37.78568967497416, "deadair_sec": 16272, "longest_sec": 1517, "avg_per_call_sec": 104}, {"ext": "308", "name": "อุ๋ย", "color": "#EF4444", "initial": "อ", "photo": "photos/308.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 130, "answered": 83, "over30": 43, "talk_total_sec": 8520, "talk_out_sec": 8520, "delta_talk_sec": 1665, "delta_calls": 12, "has_prev": true, "sales_today": 4560.0, "orders_today": 2, "avg_basket": 2280.0, "target_daily": 9857.0, "month_sales": 35230.0, "month_target": 139100.0, "conversion": 2.4096385542168677, "conv_sales": 1.5384615384615385, "achieved_pct": 46.26154002231917, "deadair_sec": 16323, "longest_sec": 1094, "avg_per_call_sec": 90}, {"ext": "309", "name": "ซิน", "color": "#6366F1", "initial": "ซ", "photo": "photos/309.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 113, "answered": 59, "over30": 39, "talk_total_sec": 10692, "talk_out_sec": 10692, "delta_talk_sec": 896, "delta_calls": 31, "has_prev": true, "sales_today": 3280.0, "orders_today": 2, "avg_basket": 1640.0, "target_daily": 4701.0, "month_sales": 69270.0, "month_target": 117700.0, "conversion": 3.389830508474576, "conv_sales": 1.7699115044247788, "achieved_pct": 69.77238885343544, "deadair_sec": 13296, "longest_sec": 2054, "avg_per_call_sec": 214}], "kpis": {"total_calls": 826, "total_over15": 267, "talk_total_sec": 50733, "talk_out_sec": 50733, "total_sales": 18970.0, "total_orders": 9, "avg_basket_all": 2107.777777777778, "conv_all": 60.653753026634384, "target_daily_all": 49910.0, "month_sales_all": 288510.0, "month_target_all": 818550.0, "achieved_all": 38.008415147265076, "month_pct": 35.246472420744, "today_date": "2026-06-18", "today_quote": "คุยกับลูกค้าเหมือนคุยกับคนสำคัญ — เพราะเขาสำคัญจริงๆ"}, "as_of": "18/06/2026 17:29 น."}</script>
 <script>
 let D = JSON.parse(document.getElementById('payload').textContent);
 const LIVE = D;
