@@ -153,8 +153,63 @@
     position: absolute; top: 8px; right: 10px;
     font-size: 11px; color: var(--text-dim); font-weight: 600;
   }
-  .leader-card.top1 { border-color: var(--gold); box-shadow: 0 0 24px rgba(252,211,77,0.15); }
-  .leader-card.top1 .rank { color: var(--gold); }
+  .leader-card.top1 {
+    grid-column: 1 / -1;
+    border-color: var(--gold);
+    box-shadow: 0 0 24px rgba(252,211,77,0.15);
+    padding: 22px 26px;
+  }
+  .leader-card.top1 .rank { color: var(--gold); font-size: 16px; font-weight: 800; }
+  .leader-card.top1 .avatar { width: 100px; height: 100px; font-size: 36px; }
+  .leader-card.top1 .leader-info .name { font-size: 24px; }
+  .leader-card.top1 .leader-info .ext { font-size: 14px; }
+  .leader-card.top1 .leader-info .stats { font-size: 15px; }
+
+  .leader-card.top2 {
+    grid-column: span 2;
+    border-color: #C0C0C0;
+    box-shadow: 0 0 16px rgba(192,192,192,0.12);
+    padding: 18px 22px;
+  }
+  .leader-card.top2 .rank { color: #C0C0C0; font-size: 14px; font-weight: 800; }
+  .leader-card.top2 .avatar { width: 78px; height: 78px; font-size: 28px; }
+  .leader-card.top2 .leader-info .name { font-size: 20px; }
+  .leader-card.top2 .leader-info .stats { font-size: 14px; }
+
+  .leader-card.top3 {
+    grid-column: span 2;
+    border-color: #CD7F32;
+    box-shadow: 0 0 16px rgba(205,127,50,0.12);
+    padding: 18px 22px;
+  }
+  .leader-card.top3 .rank { color: #CD7F32; font-size: 14px; font-weight: 800; }
+  .leader-card.top3 .avatar { width: 78px; height: 78px; font-size: 28px; }
+  .leader-card.top3 .leader-info .name { font-size: 20px; }
+  .leader-card.top3 .leader-info .stats { font-size: 14px; }
+
+  /* QUOTE BAR */
+  .quote-bar {
+    background: linear-gradient(135deg, rgba(74,144,255,0.10), rgba(0,212,255,0.08));
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 32px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .quote-text {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: 0.3px;
+    line-height: 1.3;
+  }
+  .quote-prefix {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
   .avatar {
     width: 56px; height: 56px; border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
@@ -347,14 +402,18 @@
   }
   table.heatmap td.name-col { color: var(--text); font-weight: 600; }
   table.heatmap td.name-col .ext-tag { color: var(--text-dim); font-size: 11px; margin-left: 8px; }
-  table.heatmap td.heat-cell { color: #0a1628; font-weight: 700; border-radius: 4px; }
+  table.heatmap td.heat-cell {
+    color: #0a1628; font-weight: 700; border-radius: 4px;
+  }
   table.heatmap td.lunch {
     background: rgba(255,255,255,.06) !important;
-    color: var(--text-dim); font-style: italic; font-weight: 500;
+    color: var(--text-dim);
+    font-style: italic; font-weight: 500;
   }
   table.heatmap td.total {
     background: rgba(74,144,255,.18); color: var(--accent);
-    font-weight: 800; font-size: 13px; border-radius: 4px;
+    font-weight: 800; font-size: 13px;
+    border-radius: 4px;
   }
   table.heatmap .heat-empty { color: var(--text-dim); text-align: center; padding: 20px; }
 
@@ -379,6 +438,11 @@
       <button class="edit-btn" id="exportBtn" title="คัดลอก config เพื่อบันทึกถาวร" style="display:none">💾 Copy</button>
       <button class="edit-btn" id="resetBtn" title="คืนค่าตำแหน่งรูปทุกคน" style="display:none">↺ Reset</button>
     </div>
+  </div>
+
+  <!-- QUOTE BAR — คำคมประจำวัน -->
+  <div class="quote-bar">
+    <span class="quote-prefix">✨</span><span class="quote-text" id="quoteText"></span>
   </div>
 
   <!-- Modal for exporting -->
@@ -432,6 +496,9 @@
             <th class="num">รับสาย</th>
             <th class="num">&gt;15วิ</th>
             <th class="num">Talktime</th>
+            <th class="num">Deadair</th>
+            <th class="num">เฉลี่ย/สาย</th>
+            <th class="num">คุยนานสุด</th>
             <th class="num">ยอดขาย</th>
             <th class="num">ออเดอร์</th>
             <th class="num">Size</th>
@@ -456,7 +523,7 @@
 
 </div>
 
-<script id="payload" type="application/json">{"rows": [{"ext": "302", "name": "เตย", "color": "#EC4899", "initial": "เ", "photo": "photos/302.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 133, "answered": 75, "over30": 45, "talk_total_sec": 8317, "talk_out_sec": 8317, "delta_talk_sec": 947, "delta_calls": 19, "has_prev": true, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 9302.0, "month_sales": 36780.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0}, {"ext": "304", "name": "นุช", "color": "#A855F7", "initial": "น", "photo": "photos/304.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 118, "answered": 68, "over30": 43, "talk_total_sec": 7377, "talk_out_sec": 7377, "delta_talk_sec": 819, "delta_calls": 24, "has_prev": true, "sales_today": 7150.0, "orders_today": 3, "avg_basket": 2383.0, "target_daily": 7418.0, "month_sales": 53950.0, "month_target": 128400.0, "conversion": 4.411764705882353, "conv_sales": 2.5423728813559325, "achieved_pct": 96.38716635211647}, {"ext": "305", "name": "เจ", "color": "#14B8A6", "initial": "เ", "photo": "photos/305.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 179, "answered": 131, "over30": 56, "talk_total_sec": 7332, "talk_out_sec": 7332, "delta_talk_sec": 1354, "delta_calls": 24, "has_prev": true, "sales_today": 690.0, "orders_today": 1, "avg_basket": 690.0, "target_daily": 9925.0, "month_sales": 30620.0, "month_target": 139100.0, "conversion": 0.7633587786259541, "conv_sales": 0.5586592178770949, "achieved_pct": 6.952141057934509}, {"ext": "307", "name": "กัน", "color": "#10B981", "initial": "ก", "photo": "photos/307.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 118, "answered": 70, "over30": 34, "talk_total_sec": 7251, "talk_out_sec": 7251, "delta_talk_sec": 1552, "delta_calls": 10, "has_prev": true, "sales_today": 3290.0, "orders_today": 1, "avg_basket": 3290.0, "target_daily": 8707.0, "month_sales": 62660.0, "month_target": 155150.0, "conversion": 1.4285714285714286, "conv_sales": 0.847457627118644, "achieved_pct": 37.78568967497416}, {"ext": "308", "name": "อุ๋ย", "color": "#EF4444", "initial": "อ", "photo": "photos/308.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 123, "answered": 78, "over30": 38, "talk_total_sec": 6913, "talk_out_sec": 6913, "delta_talk_sec": 389, "delta_calls": 14, "has_prev": true, "sales_today": 4560.0, "orders_today": 2, "avg_basket": 2280.0, "target_daily": 9857.0, "month_sales": 35230.0, "month_target": 139100.0, "conversion": 2.564102564102564, "conv_sales": 1.6260162601626018, "achieved_pct": 46.26154002231917}, {"ext": "309", "name": "ซิน", "color": "#6366F1", "initial": "ซ", "photo": "photos/309.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 99, "answered": 53, "over30": 34, "talk_total_sec": 10212, "talk_out_sec": 10212, "delta_talk_sec": 2053, "delta_calls": 21, "has_prev": true, "sales_today": 3280.0, "orders_today": 2, "avg_basket": 1640.0, "target_daily": 4701.0, "month_sales": 69270.0, "month_target": 117700.0, "conversion": 3.7735849056603774, "conv_sales": 2.0202020202020203, "achieved_pct": 69.77238885343544}], "kpis": {"total_calls": 770, "total_over15": 250, "talk_total_sec": 47402, "talk_out_sec": 47402, "total_sales": 18970.0, "total_orders": 9, "avg_basket_all": 2107.777777777778, "conv_all": 61.68831168831169, "target_daily_all": 49910.0, "month_sales_all": 288510.0, "month_target_all": 818550.0, "achieved_all": 38.008415147265076, "month_pct": 35.246472420744, "today_date": "2026-06-18"}, "as_of": "18/06/2026 17:06 น."}</script>
+<script id="payload" type="application/json">{"rows": [{"ext": "302", "name": "เตย", "color": "#EC4899", "initial": "เ", "photo": "photos/302.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 138, "answered": 76, "over30": 45, "talk_total_sec": 8341, "talk_out_sec": 8341, "delta_talk_sec": 299, "delta_calls": 14, "has_prev": true, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 9302.0, "month_sales": 36780.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0, "deadair_sec": 14554, "longest_sec": 966, "avg_per_call_sec": 114}, {"ext": "304", "name": "นุช", "color": "#A855F7", "initial": "น", "photo": "photos/304.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 124, "answered": 70, "over30": 45, "talk_total_sec": 7545, "talk_out_sec": 7545, "delta_talk_sec": 690, "delta_calls": 15, "has_prev": true, "sales_today": 7150.0, "orders_today": 3, "avg_basket": 2383.0, "target_daily": 7418.0, "month_sales": 53950.0, "month_target": 128400.0, "conversion": 4.285714285714286, "conv_sales": 2.4193548387096775, "achieved_pct": 96.38716635211647, "deadair_sec": 15775, "longest_sec": 825, "avg_per_call_sec": 110}, {"ext": "305", "name": "เจ", "color": "#14B8A6", "initial": "เ", "photo": "photos/305.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 185, "answered": 136, "over30": 59, "talk_total_sec": 7673, "talk_out_sec": 7673, "delta_talk_sec": 940, "delta_calls": 19, "has_prev": true, "sales_today": 690.0, "orders_today": 1, "avg_basket": 690.0, "target_daily": 9925.0, "month_sales": 30620.0, "month_target": 139100.0, "conversion": 0.7352941176470588, "conv_sales": 0.5405405405405406, "achieved_pct": 6.952141057934509, "deadair_sec": 16313, "longest_sec": 839, "avg_per_call_sec": 55}, {"ext": "307", "name": "กัน", "color": "#10B981", "initial": "ก", "photo": "photos/307.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 126, "answered": 71, "over30": 34, "talk_total_sec": 7251, "talk_out_sec": 7251, "delta_talk_sec": 35, "delta_calls": 17, "has_prev": true, "sales_today": 3290.0, "orders_today": 1, "avg_basket": 3290.0, "target_daily": 8707.0, "month_sales": 62660.0, "month_target": 155150.0, "conversion": 1.4084507042253522, "conv_sales": 0.7936507936507936, "achieved_pct": 37.78568967497416, "deadair_sec": 15371, "longest_sec": 1517, "avg_per_call_sec": 106}, {"ext": "308", "name": "อุ๋ย", "color": "#EF4444", "initial": "อ", "photo": "photos/308.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 128, "answered": 81, "over30": 41, "talk_total_sec": 8403, "talk_out_sec": 8403, "delta_talk_sec": 1548, "delta_calls": 10, "has_prev": true, "sales_today": 4560.0, "orders_today": 2, "avg_basket": 2280.0, "target_daily": 9857.0, "month_sales": 35230.0, "month_target": 139100.0, "conversion": 2.4691358024691357, "conv_sales": 1.5625, "achieved_pct": 46.26154002231917, "deadair_sec": 16056, "longest_sec": 1094, "avg_per_call_sec": 90}, {"ext": "309", "name": "ซิน", "color": "#6366F1", "initial": "ซ", "photo": "photos/309.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 108, "answered": 56, "over30": 37, "talk_total_sec": 10448, "talk_out_sec": 10448, "delta_talk_sec": 652, "delta_calls": 26, "has_prev": true, "sales_today": 3280.0, "orders_today": 2, "avg_basket": 1640.0, "target_daily": 4701.0, "month_sales": 69270.0, "month_target": 117700.0, "conversion": 3.571428571428571, "conv_sales": 1.8518518518518516, "achieved_pct": 69.77238885343544, "deadair_sec": 13175, "longest_sec": 2054, "avg_per_call_sec": 212}], "kpis": {"total_calls": 809, "total_over15": 261, "talk_total_sec": 49661, "talk_out_sec": 49661, "total_sales": 18970.0, "total_orders": 9, "avg_basket_all": 2107.777777777778, "conv_all": 60.568603213844256, "target_daily_all": 49910.0, "month_sales_all": 288510.0, "month_target_all": 818550.0, "achieved_all": 38.008415147265076, "month_pct": 35.246472420744, "today_date": "2026-06-18", "today_quote": "คุยกับลูกค้าเหมือนคุยกับคนสำคัญ — เพราะเขาสำคัญจริงๆ"}, "as_of": "18/06/2026 17:21 น."}</script>
 <script>
 let D = JSON.parse(document.getElementById('payload').textContent);
 const LIVE = D;
@@ -486,6 +553,8 @@ function kpi(label, value, sub, icon, cls) {
 function renderDashboard(data) {
   D = data;
   document.getElementById('asOf').textContent = D.as_of;
+  const qEl = document.getElementById('quoteText');
+  if (qEl) qEl.textContent = D.kpis.today_quote || '';
 
   const k = D.kpis;
   document.getElementById('kpiRow1').innerHTML = [
@@ -502,8 +571,8 @@ function renderDashboard(data) {
     kpi('ACHIEVED', (k.achieved_all||0).toFixed(1) + '%', `เป้ารวม ${fmtMoney(k.target_daily_all)}`, '🏁', (k.achieved_all>=100?'good':(k.achieved_all>=70?'warn':''))),
   ].join('');
 
-  // === SCORE: ยอดขาย 35% + ทอล์กไทม์ 25% + รับสาย>15วิ 10% + %Con 30% ===
-  // ทอล์กไทม์เต็มที่ 150 นาที, รับสาย>15วิ เต็มที่ 50 สาย, %Con เต็มที่ 13%, ยอดขายใช้ max ของกลุ่ม
+  // === SCORE: ยอดขาย 35% + ทอล์กไทม์ 25% + รับสาย>15วิ 10% + %Con (Call) 30% ===
+  // ทอล์กไทม์เต็มที่ 150 นาที, รับสาย>15วิ เต็มที่ 50 สาย, %Con (Call) เต็มที่ 13%, ยอดขายใช้ max ของกลุ่ม
   const TARGET_TALK_SEC   = 150 * 60;
   const TARGET_CALLS_OV15 = 50;
   const TARGET_CONV_PCT   = 13;
@@ -519,7 +588,7 @@ function renderDashboard(data) {
   const sorted = [...D.rows].sort((a,b) => (b.score||0) - (a.score||0));
 
   document.getElementById('leaders').innerHTML = sorted.map((r,i) => `
-    <div class="leader-card ${i===0?'top1':''}">
+    <div class="leader-card ${i===0?'top1':i===1?'top2':i===2?'top3':''}">
       <span class="rank">#${i+1}</span>
       ${avatarHTML(r)}
       <div class="leader-info">
@@ -543,6 +612,9 @@ function renderDashboard(data) {
       <td class="num">${fmtInt(r.answered)}</td>
       <td class="num">${fmtInt(r.over30)}</td>
       <td class="num"><b>${fmtHMS(r.talk_total_sec)}</b></td>
+      <td class="num">${fmtHMS(r.deadair_sec)}</td>
+      <td class="num">${fmtMin(r.avg_per_call_sec)}</td>
+      <td class="num">${fmtHMS(r.longest_sec)}</td>
       <td class="num">${fmtMoney(r.sales_today)}</td>
       <td class="num">${fmtInt(r.orders_today)}</td>
       <td class="num">${fmtMoney(r.avg_basket)}</td>
@@ -595,7 +667,9 @@ async function renderHeatmap() {
   function talkAt(ext, targetT) {
     const pts = (byExt[ext] && byExt[ext].points) || [];
     let last = 0;
-    for (const p of pts) { if (p.t <= targetT) last = p.talk; else break; }
+    for (const p of pts) {
+      if (p.t <= targetT) last = p.talk; else break;
+    }
     return last;
   }
   function heatColor(mins) {
@@ -642,7 +716,6 @@ async function renderHeatmap() {
   bodyHTML.push('</tbody>');
   tbl.innerHTML = headHTML.join('') + bodyHTML.join('');
 }
-
 
 // localStorage override — ใช้ key คนละตัวจาก HQ
 const PHOTO_KEY = 'rama2-photo-settings';
