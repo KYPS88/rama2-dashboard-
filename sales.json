@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-22T12:00:37+07:00",
+  "as_of": "2026-06-22T12:30:36+07:00",
   "by_employee": {
     "วุฒิ": {
       "sales_today": 0.0,
@@ -42,11 +42,11 @@
       "month_target": 107000.0
     },
     "กัน": {
-      "sales_today": 4760.0,
-      "orders_today": 3,
-      "avg_basket_today": 1587.0,
+      "sales_today": 7540.0,
+      "orders_today": 4,
+      "avg_basket_today": 1885.0,
       "target_daily": 10681.0,
-      "month_sales": 71490.0,
+      "month_sales": 74270.0,
       "month_target": 155150.0
     },
     "อุ๋ย": {
