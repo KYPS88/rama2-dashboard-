@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-23T06:00:36",
-  "updated_label": "23/06/2026 06:00",
+  "updated_at": "2026-06-23T06:30:35",
+  "updated_label": "23/06/2026 06:30",
   "source": "https://client.yalecom.co.th/custom_menu/extension_summary_outbound",
   "row_count": 5,
   "rows": [
@@ -43,22 +43,22 @@
     {
       "extension": "304",
       "name": "นุช",
-      "total_calls": 63,
-      "answered": 40,
+      "total_calls": 64,
+      "answered": 41,
       "missed": 23,
-      "talktime": 3292,
+      "talktime": 3388,
       "avg": 82,
       "_raw": [
         "304",
         "นุช",
-        "63",
-        "40",
+        "64",
+        "41",
         "23",
         "0",
-        "0:27:59",
-        "0:54:52",
-        "20",
-        "15",
+        "0:28:11",
+        "0:56:28",
+        "21",
+        "16",
         "25"
       ],
       "_headers": [
