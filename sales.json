@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-03T20:30:40+07:00",
+  "as_of": "2026-07-03T21:01:12+07:00",
   "by_employee": {
     "วุฒิ": {
       "sales_today": 0.0,
@@ -7,7 +7,7 @@
       "avg_basket_today": 0.0,
       "target_daily": 6052.0,
       "month_sales": 0.0,
-      "month_target": 139100.0
+      "month_target": 0.0
     },
     "เตย": {
       "sales_today": 2280.0,
@@ -15,7 +15,7 @@
       "avg_basket_today": 2280.0,
       "target_daily": 6024.0,
       "month_sales": 8860.0,
-      "month_target": 139100.0
+      "month_target": 0.0
     },
     "นุช": {
       "sales_today": 9350.0,
@@ -23,7 +23,7 @@
       "avg_basket_today": 1870.0,
       "target_daily": 6079.0,
       "month_sales": 14720.0,
-      "month_target": 139100.0
+      "month_target": 0.0
     },
     "เจ": {
       "sales_today": 0.0,
@@ -31,7 +31,7 @@
       "avg_basket_today": 0.0,
       "target_daily": 6010.0,
       "month_sales": 6870.0,
-      "month_target": 139100.0
+      "month_target": 0.0
     },
     "หน่อง": {
       "sales_today": 0.0,
@@ -39,7 +39,7 @@
       "avg_basket_today": 0.0,
       "target_daily": 6615.0,
       "month_sales": 0.0,
-      "month_target": 107000.0
+      "month_target": 0.0
     },
     "กัน": {
       "sales_today": 0.0,
@@ -47,7 +47,7 @@
       "avg_basket_today": 0.0,
       "target_daily": 43980.0,
       "month_sales": 0.0,
-      "month_target": 139100.0
+      "month_target": 0.0
     },
     "อุ๋ย": {
       "sales_today": 5570.0,
@@ -55,7 +55,7 @@
       "avg_basket_today": 2785.0,
       "target_daily": 6029.0,
       "month_sales": 12030.0,
-      "month_target": 139100.0
+      "month_target": 0.0
     },
     "ซิน": {
       "sales_today": 7360.0,
@@ -63,7 +63,7 @@
       "avg_basket_today": 2453.0,
       "target_daily": 5861.0,
       "month_sales": 17520.0,
-      "month_target": 139100.0
+      "month_target": 0.0
     }
   }
 }
