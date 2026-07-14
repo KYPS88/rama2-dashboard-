@@ -428,6 +428,29 @@
   }
   table.heatmap .heat-empty { color: var(--text-dim); text-align: center; padding: 20px; }
 
+  /* CELEBRATION for new #1 */
+  .celebrate-banner {
+    position: fixed; top: 40%; left: 50%;
+    transform: translate(-50%, -50%) scale(0.3);
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0a1628;
+    padding: 40px 60px;
+    border-radius: 24px;
+    box-shadow: 0 0 80px rgba(255,215,0,0.6), 0 20px 60px rgba(0,0,0,0.4);
+    z-index: 9999;
+    opacity: 0;
+    transition: transform .6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity .4s ease;
+    text-align: center; pointer-events: none;
+    font-family: inherit;
+  }
+  .celebrate-banner.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  .celebrate-emoji { font-size: 90px; line-height: 1; }
+  .celebrate-text { font-size: 34px; font-weight: 800; margin-top: 12px; }
+  .celebrate-sub { font-size: 18px; margin-top: 6px; font-weight: 700; opacity: .85; }
+
   @media (max-width: 980px) {
     .kpi-grid, .kpi-grid.kpi-grid-4 { grid-template-columns: repeat(2, 1fr); }
     .header .meta { position: static; transform: none; margin-top: 12px; text-align: left; }
@@ -534,7 +557,7 @@
 
 </div>
 
-<script id="payload" type="application/json">{"rows": [{"ext": "302", "name": "เตย", "color": "#EC4899", "initial": "เ", "photo": "photos/302.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 131, "answered": 83, "over30": 51, "talk_total_sec": 7642, "talk_out_sec": 7642, "delta_talk_sec": 0, "delta_calls": 0, "has_prev": true, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 6682.0, "month_sales": 25510.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0, "deadair_sec": 19330, "longest_sec": 673, "avg_per_call_sec": 87}, {"ext": "304", "name": "นุช", "color": "#A855F7", "initial": "น", "photo": "photos/304.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 135, "answered": 75, "over30": 48, "talk_total_sec": 7258, "talk_out_sec": 7258, "delta_talk_sec": 0, "delta_calls": 0, "has_prev": true, "sales_today": 5080.0, "orders_today": 2, "avg_basket": 2540.0, "target_daily": 6216.0, "month_sales": 38500.0, "month_target": 139100.0, "conversion": 2.666666666666667, "conv_sales": 1.4814814814814816, "achieved_pct": 81.72458172458172, "deadair_sec": 19018, "longest_sec": 482, "avg_per_call_sec": 98}, {"ext": "305", "name": "เจ", "color": "#14B8A6", "initial": "เ", "photo": "photos/305.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 218, "answered": 135, "over30": 54, "talk_total_sec": 6190, "talk_out_sec": 6190, "delta_talk_sec": 0, "delta_calls": 0, "has_prev": true, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 7327.0, "month_sales": 14540.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0, "deadair_sec": 20334, "longest_sec": 397, "avg_per_call_sec": 45}, {"ext": "308", "name": "อุ๋ย", "color": "#EF4444", "initial": "อ", "photo": "photos/308.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 159, "answered": 101, "over30": 53, "talk_total_sec": 6309, "talk_out_sec": 6309, "delta_talk_sec": 0, "delta_calls": 0, "has_prev": true, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 6432.0, "month_sales": 29750.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0, "deadair_sec": 19548, "longest_sec": 686, "avg_per_call_sec": 62}, {"ext": "309", "name": "ซิน", "color": "#6366F1", "initial": "ซ", "photo": "photos/309.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 134, "answered": 76, "over30": 50, "talk_total_sec": 8352, "talk_out_sec": 8352, "delta_talk_sec": 0, "delta_calls": 0, "has_prev": true, "sales_today": 3290.0, "orders_today": 1, "avg_basket": 3290.0, "target_daily": 6537.0, "month_sales": 31260.0, "month_target": 139100.0, "conversion": 1.3157894736842104, "conv_sales": 0.7462686567164178, "achieved_pct": 50.32889704757534, "deadair_sec": 18695, "longest_sec": 1041, "avg_per_call_sec": 102}], "kpis": {"total_calls": 777, "total_over15": 256, "talk_total_sec": 35751, "talk_out_sec": 35751, "total_sales": 8370.0, "total_orders": 3, "avg_basket_all": 2790.0, "conv_all": 60.489060489060485, "target_daily_all": 33194.0, "month_sales_all": 139560.0, "month_target_all": 695500.0, "achieved_all": 25.215400373561486, "month_pct": 20.066139468008625, "today_date": "2026-07-10", "today_quote": "ชีวิตที่ดีไม่ได้สมบูรณ์แบบ แต่เต็มไปด้วยความตั้งใจ"}, "as_of": "10/07/2026 21:31 น."}</script>
+<script id="payload" type="application/json">{"rows": [{"ext": "302", "name": "เตย", "color": "#EC4899", "initial": "เ", "photo": "photos/302.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 7, "answered": 2, "over30": 0, "talk_total_sec": 47, "talk_out_sec": 47, "delta_talk_sec": 0, "delta_calls": 0, "has_prev": false, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 7573.0, "month_sales": 25510.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0, "deadair_sec": 0, "longest_sec": 0, "avg_per_call_sec": 0}, {"ext": "304", "name": "นุช", "color": "#A855F7", "initial": "น", "photo": "photos/304.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 7, "answered": 3, "over30": 1, "talk_total_sec": 45, "talk_out_sec": 45, "delta_talk_sec": 0, "delta_calls": 0, "has_prev": false, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 6707.0, "month_sales": 38500.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0, "deadair_sec": 0, "longest_sec": 0, "avg_per_call_sec": 0}, {"ext": "305", "name": "เจ", "color": "#14B8A6", "initial": "เ", "photo": "photos/305.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 12, "answered": 5, "over30": 1, "talk_total_sec": 89, "talk_out_sec": 89, "delta_talk_sec": 0, "delta_calls": 0, "has_prev": false, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 8304.0, "month_sales": 14540.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0, "deadair_sec": 0, "longest_sec": 0, "avg_per_call_sec": 0}, {"ext": "308", "name": "อุ๋ย", "color": "#EF4444", "initial": "อ", "photo": "photos/308.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 2, "answered": 2, "over30": 2, "talk_total_sec": 797, "talk_out_sec": 797, "delta_talk_sec": 0, "delta_calls": 0, "has_prev": false, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 7290.0, "month_sales": 29750.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0, "deadair_sec": 0, "longest_sec": 0, "avg_per_call_sec": 0}, {"ext": "309", "name": "ซิน", "color": "#6366F1", "initial": "ซ", "photo": "photos/309.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 3, "answered": 2, "over30": 1, "talk_total_sec": 89, "talk_out_sec": 89, "delta_talk_sec": 0, "delta_calls": 0, "has_prev": false, "sales_today": 1790.0, "orders_today": 1, "avg_basket": 1790.0, "target_daily": 7189.0, "month_sales": 33050.0, "month_target": 139100.0, "conversion": 50.0, "conv_sales": 33.33333333333333, "achieved_pct": 24.899151481429964, "deadair_sec": 0, "longest_sec": 0, "avg_per_call_sec": 0}], "kpis": {"total_calls": 31, "total_over15": 5, "talk_total_sec": 1067, "talk_out_sec": 1067, "total_sales": 1790.0, "total_orders": 1, "avg_basket_all": 1790.0, "conv_all": 45.16129032258064, "target_daily_all": 37063.0, "month_sales_all": 141350.0, "month_target_all": 695500.0, "achieved_all": 4.829614440277365, "month_pct": 20.323508267433503, "today_date": "2026-07-14", "today_quote": "ทุกวันคือโอกาสใหม่ที่จะสร้างชีวิตที่เราต้องการ"}, "as_of": "14/07/2026 09:30 น."}</script>
 <script>
 let D = JSON.parse(document.getElementById('payload').textContent);
 const LIVE = D;
@@ -561,6 +584,64 @@ function kpi(label, value, sub, icon, cls) {
 }
 
 // ===== RENDER — ใช้ได้ทั้งข้อมูลปัจจุบันและย้อนหลัง =====
+// ===== Celebration for new #1 (เสียง + แบนเนอร์) =====
+const TOP1_KEY = 'rama2-last-top1';
+
+function playCelebration() {
+  try {
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    if (!Ctx) return;
+    const ctx = new Ctx();
+    const notes = [
+      {f: 523.25, d: 0.15},   // C5
+      {f: 659.25, d: 0.15},   // E5
+      {f: 783.99, d: 0.15},   // G5
+      {f: 1046.5, d: 0.55},   // C6
+    ];
+    let t = ctx.currentTime + 0.05;
+    notes.forEach(({f, d}) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'triangle';
+      osc.frequency.value = f;
+      gain.gain.setValueAtTime(0.0001, t);
+      gain.gain.exponentialRampToValueAtTime(0.35, t + 0.01);
+      gain.gain.exponentialRampToValueAtTime(0.001, t + d);
+      osc.connect(gain).connect(ctx.destination);
+      osc.start(t);
+      osc.stop(t + d + 0.05);
+      t += d;
+    });
+  } catch(e) { console.log('celebration audio failed:', e); }
+}
+
+function showCelebrationBanner(row) {
+  const old = document.querySelector('.celebrate-banner');
+  if (old) old.remove();
+  const el = document.createElement('div');
+  el.className = 'celebrate-banner';
+  el.innerHTML = `<div class="celebrate-emoji">🏆</div>
+    <div class="celebrate-text">${row.name} ขึ้นอันดับ 1!</div>
+    <div class="celebrate-sub">ext ${row.ext}</div>`;
+  document.body.appendChild(el);
+  setTimeout(() => el.classList.add('show'), 50);
+  setTimeout(() => {
+    el.classList.remove('show');
+    setTimeout(() => el.remove(), 500);
+  }, 4500);
+}
+
+function checkTop1Change(sorted) {
+  const cur = (sorted[0] || {}).ext;
+  if (!cur) return;
+  const last = localStorage.getItem(TOP1_KEY);
+  if (last && last !== cur) {
+    playCelebration();
+    showCelebrationBanner(sorted[0]);
+  }
+  localStorage.setItem(TOP1_KEY, cur);
+}
+
 function renderDashboard(data) {
   D = data;
   document.getElementById('asOf').textContent = D.as_of;
@@ -597,6 +678,7 @@ function renderDashboard(data) {
   });
 
   const sorted = [...D.rows].sort((a,b) => (b.score||0) - (a.score||0));
+  if (data === LIVE) checkTop1Change(sorted);
 
   document.getElementById('leaders').innerHTML = sorted.map((r,i) => `
     <div class="leader-card ${i===0?'top1':i===1?'top2':i===2?'top3':''}">
