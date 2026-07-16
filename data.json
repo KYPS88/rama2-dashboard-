@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-16T06:00:55",
-  "updated_label": "16/07/2026 06:00",
+  "updated_at": "2026-07-16T06:30:56",
+  "updated_label": "16/07/2026 06:30",
   "source": "https://client.yalecom.co.th/custom_menu/extension_summary_outbound",
   "row_count": 5,
   "rows": [
@@ -115,22 +115,22 @@
     {
       "extension": "308",
       "name": "อุ๋ย",
-      "total_calls": 65,
-      "answered": 46,
+      "total_calls": 66,
+      "answered": 47,
       "missed": 19,
-      "talktime": 2994,
-      "avg": 65,
+      "talktime": 3128,
+      "avg": 66,
       "_raw": [
         "308",
         "อุ๋ย",
-        "65",
-        "46",
+        "66",
+        "47",
         "19",
         "0",
-        "0:32:14",
-        "0:49:54",
-        "26",
-        "29",
+        "0:32:43",
+        "0:52:08",
+        "27",
+        "30",
         "17"
       ],
       "_headers": [
