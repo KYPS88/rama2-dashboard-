@@ -455,6 +455,30 @@
     .kpi-grid, .kpi-grid.kpi-grid-4 { grid-template-columns: repeat(2, 1fr); }
     .header .meta { position: static; transform: none; margin-top: 12px; text-align: left; }
   }
+  /* ===== CALL FEEDBACK ===== */
+  .fb-head { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+  .fb-updated { font-size:12px; color:var(--text-dim); }
+  .fb-guide { border:1px solid var(--border); border-radius:12px; background:var(--bg-card2); margin-bottom:16px; overflow:hidden; }
+  .fb-guide summary { cursor:pointer; padding:12px 16px; font-weight:600; color:var(--accent); list-style:none; }
+  .fb-guide summary::-webkit-details-marker { display:none; }
+  .fb-guide .fb-guide-body { padding:0 16px 14px; color:var(--text-dim); font-size:13px; line-height:1.7; }
+  .fb-guide .fb-guide-body b { color:var(--text); }
+  .fb-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:14px; }
+  .fb-card { background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:14px 16px; }
+  .fb-card.empty { opacity:.5; }
+  .fb-card-top { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+  .fb-ava { width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; color:#fff; font-size:14px; flex:0 0 auto; }
+  .fb-name { font-weight:600; }
+  .fb-ext { font-size:11px; color:var(--text-dim); }
+  .fb-score { margin-left:auto; font-size:12px; font-weight:700; padding:3px 9px; border-radius:999px; background:var(--bg-card2); color:var(--gold); }
+  .fb-row { margin:8px 0; font-size:13px; line-height:1.55; }
+  .fb-label { font-size:11px; font-weight:700; letter-spacing:.3px; display:block; margin-bottom:2px; }
+  .fb-pros .fb-label { color:var(--good); }
+  .fb-fix .fb-label { color:var(--warn); }
+  .fb-how .fb-label { color:var(--accent); }
+  .fb-how .fb-text { background:var(--bg-card2); border-radius:8px; padding:7px 10px; display:block; }
+  .fb-date { font-size:11px; color:var(--text-dim); margin-top:8px; text-align:right; }
+  .fb-empty-msg { color:var(--text-dim); font-size:13px; }
 </style>
 </head>
 <body>
@@ -555,9 +579,25 @@
     </div>
   </div>
 
+  <!-- ฟีดแบกการฟังสาย -->
+  <div class="section">
+    <div class="fb-head">
+      <h2 class="section-title" style="margin:0">📞 ฟีดแบกการฟังสาย</h2>
+      <span class="fb-updated" id="fbUpdated"></span>
+    </div>
+    <details class="fb-guide">
+      <summary>📘 คู่มือให้ฟีดแบก — ฟังหาอะไร / สรุปยังไง</summary>
+      <div class="fb-guide-body">
+        ฟังตาม <b>5 ช่วงของสายที่ดี</b>: (1) เปิดสายอบอุ่น (2) จับความต้องการ—ถามแล้วฟัง (3) นำเสนอคุณค่าให้ตรงปัญหา (4) ปิดการขาย+อัปเซลให้ถึง 3,000 (5) ดูแลต่อ/นัดติดตาม<br>
+        สรุปทุกครั้งเป็น 3 ช่อง: <b>ข้อดี → ข้อควรแก้ → ควรพูดอย่างไร</b> (ชมก่อน แล้วบอกจุดแก้ 1–2 จุด พร้อมประโยคที่ใช้ได้เลย)
+      </div>
+    </details>
+    <div class="fb-grid" id="fbGrid"></div>
+  </div>
+
 </div>
 
-<script id="payload" type="application/json">{"rows": [{"ext": "302", "name": "เตย", "color": "#EC4899", "initial": "เ", "photo": "photos/302.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 71, "answered": 52, "over30": 33, "talk_total_sec": 5180, "talk_out_sec": 5180, "delta_talk_sec": 1219, "delta_calls": 7, "has_prev": true, "sales_today": 1790.0, "orders_today": 1, "avg_basket": 1790.0, "target_daily": 9763.0, "month_sales": 62790.0, "month_target": 139100.0, "conversion": 1.9230769230769231, "conv_sales": 1.4084507042253522, "achieved_pct": 18.334528321212744, "deadair_sec": 8924, "longest_sec": 887, "avg_per_call_sec": 87}, {"ext": "304", "name": "นุช", "color": "#A855F7", "initial": "น", "photo": "photos/304.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 81, "answered": 49, "over30": 29, "talk_total_sec": 5085, "talk_out_sec": 5085, "delta_talk_sec": 1473, "delta_calls": 14, "has_prev": true, "sales_today": 1790.0, "orders_today": 1, "avg_basket": 1790.0, "target_daily": 5509.0, "month_sales": 96820.0, "month_target": 139100.0, "conversion": 2.0408163265306123, "conv_sales": 1.2345679012345678, "achieved_pct": 32.492285351243424, "deadair_sec": 12244, "longest_sec": 427, "avg_per_call_sec": 83}, {"ext": "305", "name": "เจ", "color": "#14B8A6", "initial": "เ", "photo": "photos/305.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 108, "answered": 64, "over30": 21, "talk_total_sec": 7153, "talk_out_sec": 7153, "delta_talk_sec": 901, "delta_calls": 29, "has_prev": true, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 11858.0, "month_sales": 44240.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0, "deadair_sec": 10882, "longest_sec": 2918, "avg_per_call_sec": 131}, {"ext": "308", "name": "อุ๋ย", "color": "#EF4444", "initial": "อ", "photo": "photos/308.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 94, "answered": 53, "over30": 35, "talk_total_sec": 5423, "talk_out_sec": 5423, "delta_talk_sec": 760, "delta_calls": 24, "has_prev": true, "sales_today": 4060.0, "orders_today": 3, "avg_basket": 1353.0, "target_daily": 9926.0, "month_sales": 63750.0, "month_target": 139100.0, "conversion": 5.660377358490567, "conv_sales": 3.1914893617021276, "achieved_pct": 40.90267983074753, "deadair_sec": 10390, "longest_sec": 993, "avg_per_call_sec": 134}, {"ext": "309", "name": "ซิน", "color": "#6366F1", "initial": "ซ", "photo": "photos/309.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 93, "answered": 47, "over30": 26, "talk_total_sec": 5906, "talk_out_sec": 5906, "delta_talk_sec": 1438, "delta_calls": 8, "has_prev": true, "sales_today": 3580.0, "orders_today": 2, "avg_basket": 1790.0, "target_daily": 8496.0, "month_sales": 74710.0, "month_target": 139100.0, "conversion": 4.25531914893617, "conv_sales": 2.1505376344086025, "achieved_pct": 42.13747645951036, "deadair_sec": 11076, "longest_sec": 478, "avg_per_call_sec": 106}], "kpis": {"total_calls": 447, "total_over15": 144, "talk_total_sec": 28747, "talk_out_sec": 28747, "total_sales": 11220.0, "total_orders": 7, "avg_basket_all": 1602.857142857143, "conv_all": 59.28411633109619, "target_daily_all": 45552.0, "month_sales_all": 342310.0, "month_target_all": 695500.0, "achieved_all": 24.631190727081137, "month_pct": 49.21782890007189, "today_date": "2026-07-23", "today_quote": "งานหนักไม่เคยฆ่าใคร แต่มันสร้างคนที่แข็งแกร่งขึ้นทุกวัน"}, "as_of": "23/07/2026 15:30 น."}</script>
+<script id="payload" type="application/json">{"rows": [{"ext": "302", "name": "เตย", "color": "#EC4899", "initial": "เ", "photo": "photos/302.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 80, "answered": 57, "over30": 37, "talk_total_sec": 5823, "talk_out_sec": 5823, "delta_talk_sec": 1686, "delta_calls": 13, "has_prev": true, "sales_today": 1790.0, "orders_today": 1, "avg_basket": 1790.0, "target_daily": 9763.0, "month_sales": 62790.0, "month_target": 139100.0, "conversion": 1.7543859649122806, "conv_sales": 1.25, "achieved_pct": 18.334528321212744, "deadair_sec": 11883, "longest_sec": 887, "avg_per_call_sec": 98, "feedback": null}, {"ext": "304", "name": "นุช", "color": "#A855F7", "initial": "น", "photo": "photos/304.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 87, "answered": 51, "over30": 30, "talk_total_sec": 5885, "talk_out_sec": 5885, "delta_talk_sec": 2161, "delta_calls": 12, "has_prev": true, "sales_today": 1790.0, "orders_today": 1, "avg_basket": 1790.0, "target_daily": 5509.0, "month_sales": 96820.0, "month_target": 139100.0, "conversion": 1.9607843137254901, "conv_sales": 1.1494252873563218, "achieved_pct": 32.492285351243424, "deadair_sec": 14317, "longest_sec": 956, "avg_per_call_sec": 99, "feedback": null}, {"ext": "305", "name": "เจ", "color": "#14B8A6", "initial": "เ", "photo": "photos/305.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 120, "answered": 72, "over30": 26, "talk_total_sec": 7699, "talk_out_sec": 7699, "delta_talk_sec": 987, "delta_calls": 30, "has_prev": true, "sales_today": 0.0, "orders_today": 0, "avg_basket": 0.0, "target_daily": 11858.0, "month_sales": 44240.0, "month_target": 139100.0, "conversion": 0.0, "conv_sales": 0.0, "achieved_pct": 0.0, "deadair_sec": 12799, "longest_sec": 2918, "avg_per_call_sec": 122, "feedback": null}, {"ext": "308", "name": "อุ๋ย", "color": "#EF4444", "initial": "อ", "photo": "photos/308.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 109, "answered": 60, "over30": 38, "talk_total_sec": 5733, "talk_out_sec": 5733, "delta_talk_sec": 628, "delta_calls": 28, "has_prev": true, "sales_today": 4060.0, "orders_today": 3, "avg_basket": 1353.0, "target_daily": 9926.0, "month_sales": 63750.0, "month_target": 139100.0, "conversion": 5.0, "conv_sales": 2.7522935779816518, "achieved_pct": 40.90267983074753, "deadair_sec": 12395, "longest_sec": 993, "avg_per_call_sec": 120, "feedback": null}, {"ext": "309", "name": "ซิน", "color": "#6366F1", "initial": "ซ", "photo": "photos/309.jpg", "photo_pos": "50% 25%", "photo_zoom": 1.0, "total_calls": 101, "answered": 52, "over30": 28, "talk_total_sec": 6268, "talk_out_sec": 6268, "delta_talk_sec": 1102, "delta_calls": 14, "has_prev": true, "sales_today": 3580.0, "orders_today": 2, "avg_basket": 1790.0, "target_daily": 8496.0, "month_sales": 74710.0, "month_target": 139100.0, "conversion": 3.8461538461538463, "conv_sales": 1.9801980198019802, "achieved_pct": 42.13747645951036, "deadair_sec": 12963, "longest_sec": 686, "avg_per_call_sec": 114, "feedback": null}], "kpis": {"total_calls": 497, "total_over15": 159, "talk_total_sec": 31408, "talk_out_sec": 31408, "total_sales": 11220.0, "total_orders": 7, "avg_basket_all": 1602.857142857143, "conv_all": 58.752515090543255, "target_daily_all": 45552.0, "month_sales_all": 342310.0, "month_target_all": 695500.0, "achieved_all": 24.631190727081137, "month_pct": 49.21782890007189, "feedback_updated": "", "today_date": "2026-07-23", "today_quote": "งานหนักไม่เคยฆ่าใคร แต่มันสร้างคนที่แข็งแกร่งขึ้นทุกวัน"}, "as_of": "23/07/2026 16:00 น."}</script>
 <script>
 let D = JSON.parse(document.getElementById('payload').textContent);
 const LIVE = D;
@@ -994,8 +1034,44 @@ function bindAllAvatars() {
   document.querySelectorAll('.avatar[data-ext], .mini-avatar[data-ext]').forEach(attachDrag);
 }
 
+// ===== ฟีดแบกการฟังสาย =====
+function renderFeedback(data) {
+  const grid = document.getElementById('fbGrid');
+  const upd = document.getElementById('fbUpdated');
+  if (!grid) return;
+  const fbUpd = (data.kpis && data.kpis.feedback_updated) || '';
+  if (upd) upd.textContent = fbUpd ? ('อัปเดตฟีดแบก: ' + String(fbUpd).replace('T',' ').slice(0,16)) : '';
+  const esc = s => (s==null?'':String(s)).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  let html = '';
+  (data.rows||[]).forEach(r => {
+    const fb = r.feedback;
+    const s = getSettings(r);
+    const av = r.photo
+      ? '<div class="fb-ava" data-ext="'+esc(r.ext)+'" style="background:'+esc(r.color)+';padding:0;overflow:hidden;"><img src="'+esc(r.photo)+'" style="width:100%;height:100%;object-fit:cover;object-position:'+esc(s.pos)+';transform:scale('+s.zoom+');transform-origin:'+esc(s.pos)+';display:block;"/></div>'
+      : '<div class="fb-ava" style="background:'+esc(r.color)+'">'+esc(r.initial||'')+'</div>';
+    const top = '<div class="fb-card-top">'+av
+      + '<div><div class="fb-name">'+esc(r.name)+'</div><div class="fb-ext">ext '+esc(r.ext)+'</div></div>';
+    if (fb && (fb.pros || fb.fix || fb.how)) {
+      const score = fb.score ? '<span class="fb-score">★ '+esc(fb.score)+'/10</span>' : '';
+      html += '<div class="fb-card">' + top + score + '</div>'
+        + (fb.pros ? '<div class="fb-row fb-pros"><span class="fb-label">✅ ข้อดี</span><span class="fb-text">'+esc(fb.pros)+'</span></div>' : '')
+        + (fb.fix ? '<div class="fb-row fb-fix"><span class="fb-label">⚠️ ข้อควรแก้</span><span class="fb-text">'+esc(fb.fix)+'</span></div>' : '')
+        + (fb.how ? '<div class="fb-row fb-how"><span class="fb-label">💬 ควรพูดอย่างไร</span><span class="fb-text">'+esc(fb.how)+'</span></div>' : '')
+        + ((fb.call_time || fb.dest) ? '<div class="fb-date">📞 '+esc(fb.call_time||'')+(fb.dest ? (' · ปลายทาง '+esc(fb.dest)) : '')+'</div>' : '')
+        + (fb.date ? '<div class="fb-date">'+esc(fb.date)+'</div>' : '')
+        + '</div>';
+    } else {
+      html += '<div class="fb-card empty">' + top + '</div>'
+        + '<div class="fb-empty-msg">ยังไม่มีฟีดแบก — ฟังสายแล้วพิมพ์ลงชีตได้เลย</div>'
+        + '</div>';
+    }
+  });
+  grid.innerHTML = html;
+}
+
 // ===== แสดงข้อมูลปัจจุบันตอนเปิดหน้า =====
 renderDashboard(LIVE);
+renderFeedback(LIVE);
 
 // ===== HISTORY MODE — เลือกวัน/เวลาดูผลย้อนหลังได้ =====
 const histDate = document.getElementById('histDate');
