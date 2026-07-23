@@ -1,29 +1,29 @@
 {
-  "updated_at": "2026-07-23T06:30:39",
-  "updated_label": "23/07/2026 06:30",
+  "updated_at": "2026-07-23T07:00:46",
+  "updated_label": "23/07/2026 07:00",
   "source": "https://client.yalecom.co.th/custom_menu/extension_summary_outbound",
   "row_count": 5,
   "rows": [
     {
       "extension": "305",
       "name": "เจ",
-      "total_calls": 71,
-      "answered": 45,
+      "total_calls": 72,
+      "answered": 46,
       "missed": 22,
-      "talktime": 6148,
-      "avg": 136,
+      "talktime": 6166,
+      "avg": 134,
       "_raw": [
         "305",
         "เจ",
-        "71",
-        "45",
+        "72",
+        "46",
         "22",
         "4",
-        "0:33:34",
-        "1:42:28",
+        "0:34:10",
+        "1:42:46",
         "15",
         "11",
-        "34"
+        "35"
       ],
       "_headers": [
         "หมายเลข",
@@ -151,23 +151,23 @@
     {
       "extension": "304",
       "name": "นุช",
-      "total_calls": 59,
-      "answered": 39,
+      "total_calls": 61,
+      "answered": 41,
       "missed": 20,
-      "talktime": 3495,
-      "avg": 89,
+      "talktime": 3514,
+      "avg": 85,
       "_raw": [
         "304",
         "นุช",
-        "59",
-        "39",
+        "61",
+        "41",
         "20",
         "0",
-        "0:29:49",
-        "0:58:15",
+        "0:30:14",
+        "0:58:34",
         "24",
         "16",
-        "23"
+        "25"
       ],
       "_headers": [
         "หมายเลข",
