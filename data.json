@@ -1,29 +1,29 @@
 {
-  "updated_at": "2026-07-24T06:00:42",
-  "updated_label": "24/07/2026 06:00",
+  "updated_at": "2026-07-24T06:30:41",
+  "updated_label": "24/07/2026 06:30",
   "source": "https://client.yalecom.co.th/custom_menu/extension_summary_outbound",
   "row_count": 4,
   "rows": [
     {
       "extension": "309",
       "name": "ซิน",
-      "total_calls": 33,
-      "answered": 22,
+      "total_calls": 34,
+      "answered": 23,
       "missed": 11,
-      "talktime": 4792,
-      "avg": 217,
+      "talktime": 4796,
+      "avg": 208,
       "_raw": [
         "309",
         "ซิน",
-        "33",
-        "22",
+        "34",
+        "23",
         "11",
         "0",
-        "0:12:14",
-        "1:19:52",
+        "0:12:27",
+        "1:19:56",
         "17",
         "14",
-        "8"
+        "9"
       ],
       "_headers": [
         "หมายเลข",
