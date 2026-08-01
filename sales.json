@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-29T22:50:05+07:00",
+  "as_of": "2026-08-01T09:30:39+07:00",
   "by_employee": {
     "วุฒิ": {
       "sales_today": 0.0,
@@ -10,27 +10,27 @@
       "month_target": 139100.0
     },
     "เตย": {
-      "sales_today": 2280.0,
-      "orders_today": 1,
-      "avg_basket_today": 2280.0,
-      "target_daily": 18233.0,
-      "month_sales": 86680.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
+      "target_daily": 5564.0,
+      "month_sales": 0.0,
       "month_target": 139100.0
     },
     "นุช": {
-      "sales_today": 7670.0,
-      "orders_today": 3,
-      "avg_basket_today": 2557.0,
-      "target_daily": 11680.0,
-      "month_sales": 111730.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
+      "target_daily": 5564.0,
+      "month_sales": 0.0,
       "month_target": 139100.0
     },
     "เจ": {
-      "sales_today": 3580.0,
-      "orders_today": 2,
-      "avg_basket_today": 1790.0,
-      "target_daily": 22863.0,
-      "month_sales": 74090.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
+      "target_daily": 5564.0,
+      "month_sales": 0.0,
       "month_target": 139100.0
     },
     "หน่อง": {
@@ -50,19 +50,19 @@
       "month_target": 139100.0
     },
     "อุ๋ย": {
-      "sales_today": 5370.0,
-      "orders_today": 3,
-      "avg_basket_today": 1790.0,
-      "target_daily": 17200.0,
-      "month_sales": 92870.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
+      "target_daily": 5564.0,
+      "month_sales": 0.0,
       "month_target": 139100.0
     },
     "ซิน": {
-      "sales_today": 1790.0,
-      "orders_today": 1,
-      "avg_basket_today": 1790.0,
-      "target_daily": 15653.0,
-      "month_sales": 93930.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
+      "target_daily": 5564.0,
+      "month_sales": 0.0,
       "month_target": 139100.0
     }
   }
