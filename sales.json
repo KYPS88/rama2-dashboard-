@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-01T21:30:45+07:00",
+  "as_of": "2026-08-03T09:30:51+07:00",
   "by_employee": {
     "วุฒิ": {
       "sales_today": 0.0,
@@ -10,28 +10,28 @@
       "month_target": 139100.0
     },
     "เตย": {
-      "sales_today": 4070.0,
-      "orders_today": 2,
-      "avg_basket_today": 2035.0,
-      "target_daily": 6206.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
+      "target_daily": 6295.0,
       "month_sales": 4070.0,
-      "month_target": 139100.0
+      "month_target": 145000.0
     },
     "นุช": {
-      "sales_today": 3290.0,
-      "orders_today": 1,
-      "avg_basket_today": 3290.0,
-      "target_daily": 6848.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
+      "target_daily": 6996.0,
       "month_sales": 3290.0,
-      "month_target": 139100.0
+      "month_target": 160000.0
     },
     "เจ": {
-      "sales_today": 3290.0,
-      "orders_today": 1,
-      "avg_basket_today": 3290.0,
-      "target_daily": 5564.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
+      "target_daily": 5659.0,
       "month_sales": 3290.0,
-      "month_target": 139100.0
+      "month_target": 130000.0
     },
     "หน่อง": {
       "sales_today": 0.0,
@@ -47,23 +47,23 @@
       "avg_basket_today": 0.0,
       "target_daily": 43980.0,
       "month_sales": 0.0,
-      "month_target": 139100.0
+      "month_target": 130000.0
     },
     "อุ๋ย": {
       "sales_today": 0.0,
       "orders_today": 0,
       "avg_basket_today": 0.0,
-      "target_daily": 5564.0,
+      "target_daily": 5796.0,
       "month_sales": 0.0,
-      "month_target": 139100.0
+      "month_target": 130000.0
     },
     "ซิน": {
-      "sales_today": 3290.0,
-      "orders_today": 1,
-      "avg_basket_today": 3290.0,
-      "target_daily": 5564.0,
+      "sales_today": 0.0,
+      "orders_today": 0,
+      "avg_basket_today": 0.0,
+      "target_daily": 5659.0,
       "month_sales": 3290.0,
-      "month_target": 139100.0
+      "month_target": 130000.0
     }
   }
 }
