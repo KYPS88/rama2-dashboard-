@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-17T08:30:42+07:00",
+  "as_of": "2026-08-17T09:00:59+07:00",
   "by_employee": {
     "วุฒิ": {
       "sales_today": 0.0,
@@ -13,7 +13,7 @@
       "sales_today": 0.0,
       "orders_today": 0,
       "avg_basket_today": 0.0,
-      "target_daily": 7616.0,
+      "target_daily": 7888.0,
       "month_sales": 52600.0,
       "month_target": 155150.0
     },
@@ -21,7 +21,7 @@
       "sales_today": 0.0,
       "orders_today": 0,
       "avg_basket_today": 0.0,
-      "target_daily": 9613.0,
+      "target_daily": 9840.0,
       "month_sales": 43280.0,
       "month_target": 171200.0
     },
@@ -29,7 +29,7 @@
       "sales_today": 0.0,
       "orders_today": 0,
       "avg_basket_today": 0.0,
-      "target_daily": 29213.0,
+      "target_daily": 8935.0,
       "month_sales": 22940.0,
       "month_target": 139100.0
     },
@@ -53,7 +53,7 @@
       "sales_today": 0.0,
       "orders_today": 0,
       "avg_basket_today": 0.0,
-      "target_daily": 7844.0,
+      "target_daily": 8019.0,
       "month_sales": 34850.0,
       "month_target": 139100.0
     },
@@ -61,7 +61,7 @@
       "sales_today": 0.0,
       "orders_today": 0,
       "avg_basket_today": 0.0,
-      "target_daily": 7034.0,
+      "target_daily": 7438.0,
       "month_sales": 42410.0,
       "month_target": 139100.0
     }
