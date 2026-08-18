@@ -1,29 +1,29 @@
 {
-  "updated_at": "2026-08-18T05:30:33",
-  "updated_label": "18/08/2026 05:30",
+  "updated_at": "2026-08-18T05:31:03",
+  "updated_label": "18/08/2026 05:31",
   "source": "https://client.yalecom.co.th/custom_menu/extension_summary_outbound",
   "row_count": 5,
   "rows": [
     {
       "extension": "302",
       "name": "เตย",
-      "total_calls": 59,
-      "answered": 39,
+      "total_calls": 60,
+      "answered": 40,
       "missed": 20,
-      "talktime": 4403,
-      "avg": 112,
+      "talktime": 4429,
+      "avg": 110,
       "_raw": [
         "302",
         "เตย",
-        "59",
-        "39",
+        "60",
+        "40",
         "20",
         "0",
-        "0:27:27",
-        "1:13:23",
+        "0:27:37",
+        "1:13:49",
         "20",
         "4",
-        "35"
+        "36"
       ],
       "_headers": [
         "หมายเลข",
